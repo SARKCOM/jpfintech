@@ -3,33 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetch Excel Data</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <title>Jamnalal parekh FInance Pvt. Ltd</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 20px;
         }
-        table {
-            border-collapse: collapse;
-            width: 100%;
+        .container {
+            margin: 20px;
+            display: none; /* Hide the container initially */
         }
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
+        .search-container {
+            margin-bottom: 20px;
         }
-        th {
-            background-color: #f2f2f2;
+        .results {
+            margin-top: 20px;
+        }
+        #password-container {
+            margin: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Excel Data</h1>
-    <table id="excel-table">
-        <!-- Table content will be dynamically added here -->
-    </table>
-
+    <div id="password-container">
+        <h1>Enter Password</h1>
+        <input type="password" id="password-input" placeholder="Password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+    <div class="container" id="main-container">
+        <h1>Search Excel Data</h1>
+        <div class="search-container">
+            <select id="column-select"></select>
+            <input type="text" id="search-input" placeholder="Search...">
+            <button onclick="searchData()">Search</button>
+        </div>
+        <div class="results" id="results"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
