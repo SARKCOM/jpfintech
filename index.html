@@ -3,42 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excel Data Search</title>
+    <title>Jamnalal Parekh finance Pvt.Ltd</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #87CEEB; /* Light sky blue background */
+            padding: 20px;
         }
-        .container {
-            margin: 20px;
-            display: none; /* Hide the container initially */
+        h1 {
+            color: #333; /* Dark gray text color */
         }
-        .search-container {
-            margin-bottom: 20px;
-        }
-        .results {
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #000080; /* Navy blue table background */
+            color: #fff; /* White text color */
             margin-top: 20px;
         }
-        #password-container {
-            margin: 20px;
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #333; /* Dark gray header background */
         }
     </style>
 </head>
 <body>
-    <div id="password-container">
-        <h1>Enter Password</h1>
-        <input type="password" id="password-input" placeholder="Password">
-        <button onclick="checkPassword()">Submit</button>
-    </div>
-    <div class="container" id="main-container">
-        <h1>Search Excel Data</h1>
-        <div class="search-container">
-            <select id="column-select"></select>
-            <input type="text" id="search-input" placeholder="Search...">
-            <button onclick="searchData()">Search</button>
-        </div>
-        <div class="results" id="results"></div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <h1>Excel Data</h1>
+    <table id="excel-table">
+        <!-- Table content will be dynamically added here -->
+    </table>
+
     <script src="script.js"></script>
 </body>
 </html>
