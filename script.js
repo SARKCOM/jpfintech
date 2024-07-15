@@ -8,7 +8,7 @@ function checkPassword() {
         document.getElementById('main-container').style.display = 'block';
         loadExcelData(); // Load Excel data after the password is confirmed
     } else {
-        alert('Incorrect password');
+        alert('You are not authorized .Please check the password');
     }
 }
 
