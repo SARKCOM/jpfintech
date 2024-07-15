@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamnalal parekh FInance Pvt. Ltd</title>
+    <title>Jamnalal Parekh Finance Pvt. Ltd</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333; /* Dark gray text */
+            margin: 0;
+            padding: 0;
         }
         .container {
             margin: 20px;
             display: none; /* Hide the container initially */
+            background-color: #fff; /* White background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Soft shadow */
         }
         .search-container {
             margin-bottom: 20px;
@@ -20,19 +28,62 @@
         }
         #password-container {
             margin: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #555; /* Dark gray heading */
+        }
+        input[type="password"],
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+            margin-right: 10px;
+            font-size: 14px;
+            outline: none;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #008080; /* Teal button color */
+            color: #fff; /* White text */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #005555; /* Darker teal on hover */
+        }
+        select {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
         }
     </style>
 </head>
 <body>
     <div id="password-container">
-        <h1>Enter Password</h1>
+        <h1>Welcome</h1>
         <input type="password" id="password-input" placeholder="Password">
         <button onclick="checkPassword()">Submit</button>
     </div>
     <div class="container" id="main-container">
-        <h1>Search Excel Data</h1>
+        <h1>Jamnalal parekh Finance Pvt. Ltd</h1>
         <div class="search-container">
-            <select id="column-select"></select>
+            <select id="column-select">
+                <option value="column1">Column 1</option>
+                <option value="column2">Column 2</option>
+                <option value="column3">Column 3</option>
+                <!-- Add more options as needed -->
+            </select>
             <input type="text" id="search-input" placeholder="Search...">
             <button onclick="searchData()">Search</button>
         </div>
