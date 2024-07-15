@@ -67,6 +67,23 @@
             border-radius: 4px;
             outline: none;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #008080; /* Navy blue header */
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Light gray background for even rows */
+        }
     </style>
 </head>
 <body>
@@ -74,21 +91,16 @@
         <h1>Jamnalal Parekh Finance Pvt. Ltd</h1>
         <h2>Leading Financial Solutions Provider</h2>
         <p>Your trusted partner for all financial needs.</p>
-        <p>Created by -Sapan Shrivastava.</p>
+        <p>Created by - Sapan Shrivastava.</p>
         <input type="password" id="password-input" placeholder="Password">
         <button onclick="checkPassword()">Submit</button>
     </div>
     <div class="container" id="main-container">
-        <h1>Jamnalal parekh Finance Pvt. Ltd</h1>
-<h2>To Search Customer details </h2>
-<p> Please select the search data you required<p>
+        <h1>Jamnalal Parekh Finance Pvt. Ltd</h1>
+        <h2>To Search Customer details</h2>
+        <p>Please select the search data you require</p>
         <div class="search-container">
-            <select id="column-select">
-                <option value="column1">Column 1</option>
-                <option value="column2">Column 2</option>
-                <option value="column3">Column 3</option>
-                <!-- Add more options as needed -->
-            </select>
+            <select id="column-select"></select>
             <input type="text" id="search-input" placeholder="Search...">
             <button onclick="searchData()">Search</button>
         </div>
